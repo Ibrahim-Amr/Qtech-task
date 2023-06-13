@@ -5,7 +5,7 @@ import logo from '@/public/logo-sm.webp';
 const Logo = () => {
 	return (
 		<Link href={'/'}>
-			<Image src={logo} alt='logo' width={50} height={0} />
+			<Image src={logo} alt='logo' width={65} height={0} />
 		</Link>
 	);
 };

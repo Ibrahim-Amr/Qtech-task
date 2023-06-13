@@ -14,8 +14,6 @@ const Navbar = () => {
       h-auto
 			z-50
 			text-[#1e1e1e]
-			border-b
-      border-black
 			${isNavbarVisible ? 'top-0' : 'top-0 sm:top-[-85px]'}
 			transition-[top]
 			duration-300

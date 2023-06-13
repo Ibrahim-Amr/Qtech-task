@@ -20,7 +20,7 @@ const NavMenuItem: React.FC<NavitemProps> = ({ href, label }) => {
         font-bold
 				relative
         py-2
-				before:h-[1px]
+				before:h-[2px]
 				before:absolute
 				before:bottom-0
 				before:w-0
@@ -28,13 +28,12 @@ const NavMenuItem: React.FC<NavitemProps> = ({ href, label }) => {
 				before:hover:w-full
 				before:transition-[width]
 				before:duration-300
-				hover:text-[#1e1e1e]
+				hover:text-orange-main
 				before:z-[-1]
 				transition
 				duration-300
 				ease-in-out
-				${href === pathname ? 'text-orange-main' : 'text-blue-main'}
-				${href === pathname ? 'bg-white' : 'bg-transparent'}
+				${href === pathname ? 'text-orange-main before:w-full' : 'text-blue-main '}
       `}>
 				{label}
 			</Link>

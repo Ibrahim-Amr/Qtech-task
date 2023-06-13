@@ -1,3 +1,9 @@
+import Slider from './components/hero/Slider';
+
 export default function Home() {
-	return <h1 className='text-blue-main'>مرحبا</h1>;
+	return (
+		<>
+			<Slider />
+		</>
+	);
 }

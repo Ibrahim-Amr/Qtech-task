@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* SWIPER */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	color: blue !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: blue !important;
+}
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+	bottom: 0 !important;
+	top: auto !important;
+}
