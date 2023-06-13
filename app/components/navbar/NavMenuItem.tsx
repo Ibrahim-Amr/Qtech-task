@@ -13,6 +13,7 @@ const NavMenuItem: React.FC<NavitemProps> = ({ href, label }) => {
 	return (
 		<li title={label}>
 			<Link
+				scroll={false}
 				href={href}
 				className={`
 				block

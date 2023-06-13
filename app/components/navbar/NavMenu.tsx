@@ -2,7 +2,7 @@ import NavMenuItem from './NavMenuItem';
 
 const Navlinks = [
 	{ label: 'الرئيسية', href: '/' },
-	{ label: 'الرؤيةوالرسالة', href: '#vision' },
+	{ label: 'الرؤيةوالرسالة', href: '#goals' },
 	{ label: 'عملاؤنا', href: '#clients' },
 	{ label: 'الهيكل التنظيمي', href: '#clients' },
 	{ label: 'من نحن', href: '#clients' },

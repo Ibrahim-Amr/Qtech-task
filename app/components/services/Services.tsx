@@ -34,11 +34,16 @@ const services = [
 
 const Services = () => {
 	return (
-		<section id='services' className='relative min-h-screen w-full z-[60] py-14 xl:p-14'>
+		<section id='services' className='relative h-auto w-full z-[60] py-14 xl:p-14'>
 			<Container>
 				<div className='grid sm:grid-cols-2 gap-x-[30px] mb-10'>
 					{services.map((serv) => (
-						<ServicesCard title={serv.title} subtitle={serv.subtitle} image={serv.image} />
+						<ServicesCard
+							key={serv.title}
+							title={serv.title}
+							subtitle={serv.subtitle}
+							image={serv.image}
+						/>
 					))}
 				</div>
 				<div className='w-full text-center text-[#333] text-base font-medium'>

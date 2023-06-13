@@ -8,7 +8,7 @@ interface ServicesCardProps {
 const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle }) => {
 	return (
 		<div className='w-full py-[10px] flex flex-col lg:flex-row justify-center items-center'>
-			<div className='relative flex-1'>
+			<div className='group relative flex-1'>
 				<svg
 					className='pouple min-w-[250px] w-full'
 					xmlns='http://www.w3.org/2000/svg'
@@ -23,10 +23,10 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle }) =
 					alt={title}
 					width={75}
 					height={75}
-					className='absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 '
+					className='group-hover:scale-75 group-hover:rotate-12 transition duration-700 ease-in absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 '
 				/>
 			</div>
-			<div className='flex-1 text-center lg:text-start'>
+			<div className='flex-1 text-center lg:text-start text-blue-main'>
 				<h2 className='text-lg font-bold'>{title}</h2>
 				<p>{subtitle}</p>
 			</div>
