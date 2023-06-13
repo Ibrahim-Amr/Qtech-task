@@ -37,8 +37,16 @@ body {
 }
 
 #goals {
-	background-image: url('../public//theView.png');
+	background-image: url('../public/theView.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	object-fit: cover;
+}
+#about {
+	background-image: url('../public/who-us.webp');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: cover;
 }

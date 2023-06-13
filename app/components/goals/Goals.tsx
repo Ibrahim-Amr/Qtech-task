@@ -6,7 +6,7 @@ import Button from '../Button';
 
 const Goals = () => {
 	return (
-		<section id='goals' className='bg-goals py-14 xl:p-14'>
+		<section id='goals' className='h-auto w-full py-14 xl:p-14'>
 			<Container>
 				<div className='flex justify-between items-center gap-x-8'>
 					<div className='flex-1 flex flex-col justify-center items-center lg:inline-block '>
