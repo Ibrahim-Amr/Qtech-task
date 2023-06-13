@@ -9,8 +9,8 @@ import 'swiper/css/bundle';
 const font = Cairo({ subsets: ['latin'] });
 
 export const metadata = {
-	title: 'Qtech',
-	description: 'Qtech',
+	title: 'رواد الخبرة',
+	description: 'رواد',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

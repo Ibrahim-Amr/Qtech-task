@@ -36,9 +36,9 @@ const Slider = () => {
 								loading='lazy'
 								className='object-cover object-center w-full h-full relative brightness-[0.45]'
 							/>
-							<div className='absolute inset-0 w-full  text-white flex flex-col justify-center items-center lg:items-start gap-y-3 pr-36'>
-								<h3 className='text-2xl font-bold'> مع رواد الخبرة للاستشارات </h3>
-								<h4 className='text-lg font-semibold'> سوف تجد كل الحلول التى تناسبك </h4>
+							<div className='absolute inset-0 w-full text-white flex flex-col justify-center items-center lg:items-start gap-y-3 lg:pr-36'>
+								<h3 className='text-xl sm:text-2xl font-bold'> مع رواد الخبرة للاستشارات </h3>
+								<h4 className='text-lg sm:text-lg font-semibold'>سوف تجد كل الحلول التى تناسبك </h4>
 								<p className='text-sm font-medium'>الاقتصادية - الإدارية - التعليمية والتربوية</p>
 								<Button label='تواصل معنا' />
 							</div>

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
 /* SWIPER */
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -17,4 +20,13 @@
 .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
 	bottom: 0 !important;
 	top: 85px !important;
+}
+
+.pouple path {
+	transition: all 0.5s;
+}
+.pouple path:hover {
+	d: path(
+		'M35.27,54.16c-55,45,36.73,133.12,167.7,128.08,86.49-3.32,102.46-122.53,41-146C167.72,7.06,88,11,35.27,54.16Z'
+	);
 }

@@ -15,11 +15,13 @@ const Navbar = () => {
       h-auto
 			z-50
 			text-[#1e1e1e]
+			top-0
 			${isNavbarVisible ? 'top-0' : 'top-0 sm:top-[-85px]'}
 			transition-[top]
 			duration-300
 			ease-in-out
       py-5
+			z-[100]
 			`}>
 			<nav
 				className='
