@@ -1,3 +1,4 @@
+import Contact from './components/Contact/Contact';
 import AboutUs from './components/aboutUs/AboutUs';
 import Goals from './components/goals/Goals';
 import Slider from './components/hero/Slider';
@@ -10,6 +11,7 @@ export default function Home() {
 			<Services />
 			<Goals />
 			<AboutUs />
+			<Contact />
 		</>
 	);
 }
