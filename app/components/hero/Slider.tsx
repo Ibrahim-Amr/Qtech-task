@@ -8,6 +8,7 @@ import img3 from '@/public/slider/3.jpeg';
 import img4 from '@/public/slider/4.jpeg';
 import img5 from '@/public/slider/5.jpeg';
 import Button from '../Button';
+import Wave from '../services/Wave';
 
 const slideImages = [{ img: img1 }, { img: img2 }, { img: img3 }, { img: img4 }, { img: img5 }];
 const Slider = () => {
@@ -45,6 +46,7 @@ const Slider = () => {
 					</SwiperSlide>
 				))}
 			</Swiper>
+			<Wave />
 		</section>
 	);
 };
