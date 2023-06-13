@@ -13,7 +13,7 @@ const Social: React.FC<SocailProps> = ({ label, href = '', icon: Icon, title }) 
 			{label && (
 				<div
 					className='
-					text-blue-main
+					text-white
             font-[Jost]
             text-sm
             tracking-widest
@@ -29,7 +29,7 @@ const Social: React.FC<SocailProps> = ({ label, href = '', icon: Icon, title }) 
 			{Icon && (
 				<Link
 					className='
-          text-blue-main
+          text-white
             hover:opacity-70
             transition
             duration-100

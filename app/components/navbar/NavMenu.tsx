@@ -20,7 +20,6 @@ const NavMenu = () => {
 				transition-opacity
 				duration-200
 				ease-in-out
-        
         '>
 			<ul
 				className='

@@ -33,7 +33,7 @@ const NavMenuItem: React.FC<NavitemProps> = ({ href, label }) => {
 				transition
 				duration-300
 				ease-in-out
-				${href === pathname ? 'text-orange-main before:w-full' : 'text-blue-main '}
+				${href === pathname ? 'text-orange-main before:w-full' : 'text-white '}
       `}>
 				{label}
 			</Link>

@@ -5,16 +5,16 @@
 /* SWIPER */
 .swiper-button-next:after,
 .swiper-button-prev:after {
-	color: blue !important;
+	color: #000060 !important;
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-	background: blue !important;
+	background: #000060 !important;
 }
 .swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal,
 .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
 .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
 	bottom: 0 !important;
-	top: auto !important;
+	top: 85px !important;
 }

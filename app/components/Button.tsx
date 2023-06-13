@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({ label, href }) => {
         bg-blue-main
           text-base
           font-normal
-          px-4
+          px-10
           py-2'>
 					{label}
 				</Link>
@@ -24,8 +24,13 @@ const Button: React.FC<ButtonProps> = ({ label, href }) => {
         bg-blue-main
           text-base
           font-normal
-          px-4
-          py-2
+					px-12
+          py-4
+					rounded-xl
+					hover:bg-orange-main
+					transition
+					duration-200
+					ease-linear
       '>
 					{label}
 				</button>

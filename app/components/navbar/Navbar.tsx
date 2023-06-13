@@ -6,6 +6,7 @@ import SocailMenu from './SocailMenu';
 
 const Navbar = () => {
 	const isNavbarVisible = useNavbarVisibility();
+
 	return (
 		<header
 			className={`

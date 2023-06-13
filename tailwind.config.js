@@ -12,10 +12,10 @@ module.exports = {
 		extend: {
 			colors: {
 				blue: {
-					main: '#08138aff',
+					main: '#000060',
 				},
 				orange: {
-					main: '#e36c09ff',
+					main: '#e36c09',
 				},
 			},
 		},
