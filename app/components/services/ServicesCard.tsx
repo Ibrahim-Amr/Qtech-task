@@ -23,7 +23,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle }) =
 					alt={title}
 					width={75}
 					height={75}
-					className=' group-hover:scale-75 group-hover:rotate-12 transition duration-700 ease-in absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 '
+					className='w-auto h-auto group-hover:scale-75 group-hover:rotate-12 transition duration-700 ease-in absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 '
 				/>
 			</div>
 			<div className='flex-1 text-center lg:text-start text-blue-main'>

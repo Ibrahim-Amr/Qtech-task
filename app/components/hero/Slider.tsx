@@ -2,11 +2,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper';
 import Image from 'next/image';
-import img1 from '@/public/slider/1.jpeg';
-import img2 from '@/public/slider/2.jpeg';
-import img3 from '@/public/slider/3.jpeg';
-import img4 from '@/public/slider/4.jpeg';
-import img5 from '@/public/slider/5.jpeg';
+import img1 from '@/public/slider/1.webp';
+import img2 from '@/public/slider/2.webp';
+import img3 from '@/public/slider/3.webp';
+import img4 from '@/public/slider/4.webp';
+import img5 from '@/public/slider/5.webp';
 import Button from '../Button';
 import Wave from '../services/Wave';
 

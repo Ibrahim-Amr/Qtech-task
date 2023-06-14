@@ -16,9 +16,9 @@ const Wave = () => {
 				priority
 				src={office}
 				alt='wave'
-				width={650}
-				height={650}
-				className='max-w-[650px] h-auto object-cover object-center z-50 absolute left-0 bottom-0 translate-y-[20%]'
+				width={500}
+				height={500}
+				className='w-auto h-auto object-cover object-center z-50 absolute left-0 bottom-0 translate-y-[20%]'
 			/>
 		</div>
 	);

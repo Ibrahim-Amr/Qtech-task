@@ -1,3 +1,5 @@
+'use client';
+import useNavbarVisibility from '@/hooks/useNavbarVisibility';
 import Link from 'next/link';
 import { IconType } from 'react-icons';
 
@@ -8,12 +10,13 @@ interface SocailProps {
 	icon?: IconType;
 }
 const Social: React.FC<SocailProps> = ({ label, href = '', icon: Icon, title }) => {
+	const { currentScroll } = useNavbarVisibility();
+
 	return (
 		<>
 			{label && (
 				<div
-					className='
-					text-white
+					className={`
             font-[Jost]
             text-sm
             tracking-widest
@@ -21,19 +24,22 @@ const Social: React.FC<SocailProps> = ({ label, href = '', icon: Icon, title }) 
             hover:opacity-70
             transition
             duration-100
-            ease-in-out'
+            ease-in-out
+						${currentScroll >= 20 ? 'text-blue-main' : 'text-white'}
+						`}
 					title={title}>
 					<Link href={href}>{label}</Link>
 				</div>
 			)}
 			{Icon && (
 				<Link
-					className='
-          text-white
+					className={`
             hover:opacity-70
             transition
             duration-100
-            ease-in-out'
+            ease-in-out
+						${currentScroll >= 20 ? 'text-blue-main' : 'text-white'}
+						`}
 					href={href}
 					target='_blank'
 					title={title}>

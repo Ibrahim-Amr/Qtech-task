@@ -1,5 +1,4 @@
 import { FiMail } from 'react-icons/fi';
-
 import { IoCall } from 'react-icons/io5';
 import Social from './Social';
 

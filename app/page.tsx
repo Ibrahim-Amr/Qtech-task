@@ -1,4 +1,6 @@
 import Contact from './components/Contact/Contact';
+import Footer from './components/footer/Footer';
+import Ostructure from './components/Ostructure/Ostructure';
 import AboutUs from './components/aboutUs/AboutUs';
 import Goals from './components/goals/Goals';
 import Slider from './components/hero/Slider';
@@ -10,8 +12,10 @@ export default function Home() {
 			<Slider />
 			<Services />
 			<Goals />
+			<Ostructure />
 			<AboutUs />
 			<Contact />
+			<Footer />
 		</>
 	);
 }

@@ -1,4 +1,5 @@
 'use client';
+import useNavbarVisibility from '@/hooks/useNavbarVisibility';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -9,6 +10,7 @@ interface NavitemProps {
 
 const NavMenuItem: React.FC<NavitemProps> = ({ href, label }) => {
 	const pathname = usePathname();
+	const { currentScroll } = useNavbarVisibility();
 
 	return (
 		<li title={label}>
@@ -34,7 +36,8 @@ const NavMenuItem: React.FC<NavitemProps> = ({ href, label }) => {
 				transition
 				duration-300
 				ease-in-out
-				${href === pathname ? 'text-orange-main before:w-full' : 'text-white '}
+				${href === pathname ? 'text-orange-main before:w-full' : ''}
+				${currentScroll >= 20 ? 'text-blue-main' : 'text-white'}
       `}>
 				{label}
 			</Link>

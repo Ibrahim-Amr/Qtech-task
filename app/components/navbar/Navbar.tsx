@@ -5,7 +5,7 @@ import NavMenu from './NavMenu';
 import SocailMenu from './SocailMenu';
 
 const Navbar = () => {
-	const isNavbarVisible = useNavbarVisibility();
+	const { isNavbarVisible, currentScroll } = useNavbarVisibility();
 
 	return (
 		<header
@@ -13,15 +13,16 @@ const Navbar = () => {
 			fixed
 			w-full
       h-auto
-			z-50
-			text-[#1e1e1e]
-			top-0
-			${isNavbarVisible ? 'top-0' : 'top-0 sm:top-[-85px]'}
-			transition-[top]
-			duration-300
-			ease-in-out
       py-5
 			z-[100]
+			${isNavbarVisible ? 'top-0' : 'top-0 sm:top-[-100%]'}
+			${
+				currentScroll >= 20
+					? 'bg-white shadow-md transition ease-in-out text-blue-main'
+					: 'bg-transparent shadow-none transition ease-in-out'
+			}
+			transition-[top]
+			duration-300
 			`}>
 			<nav
 				className='
