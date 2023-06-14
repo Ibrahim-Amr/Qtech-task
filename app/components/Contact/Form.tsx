@@ -25,10 +25,8 @@ const Form = () => {
 	};
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className='z-50 w-full'>
-			<div className='flex justify-center items-center gap-x-5'>
-				<Input id='name' label='الاسم' type='text' register={register} errors={errors} />
-				<Input id='phone' label='رقم الجوال' type='text' register={register} errors={errors} />
-			</div>
+			<Input id='name' label='الاسم' type='text' register={register} errors={errors} />
+			<Input id='phone' label='رقم الجوال' type='text' register={register} errors={errors} />
 			<Input id='email' label='البريد الالكتروني' type='text' register={register} errors={errors} />
 			<button
 				disabled={isLoading || isSubmitting}
@@ -43,6 +41,7 @@ const Form = () => {
 					shadow
 					hover:shadow-lg
 					hover:bg-orange-main
+					active:scale-95
 					transition
 					duration-200
 					ease-linear

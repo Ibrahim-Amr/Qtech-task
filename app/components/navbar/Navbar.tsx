@@ -17,7 +17,7 @@ const Navbar = () => {
 			z-[100]
 			${isNavbarVisible ? 'top-0' : 'top-0 sm:top-[-100%]'}
 			${
-				currentScroll >= 20
+				currentScroll >= 50
 					? 'bg-white shadow-md transition ease-in-out text-blue-main'
 					: 'bg-transparent shadow-none transition ease-in-out'
 			}

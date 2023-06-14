@@ -3,10 +3,11 @@ import Container from '../Container';
 import view from '@/public/view.webp';
 import SectionHeading from '../SectionHeading';
 import Button from '../Button';
+import GoalsSlider from './GoalsSlider';
 
 const Goals = () => {
 	return (
-		<section id='goals' className='h-auto w-full py-14 xl:p-14'>
+		<section id='goals' className='goals h-auto w-full py-14 overflow-hidden'>
 			<Container>
 				<div className='flex justify-between items-center gap-x-8'>
 					<div className='flex-1 flex flex-col justify-center items-center lg:inline-block '>
@@ -27,6 +28,7 @@ const Goals = () => {
 					</div>
 				</div>
 			</Container>
+			<GoalsSlider />
 		</section>
 	);
 };

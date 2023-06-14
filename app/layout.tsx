@@ -2,7 +2,9 @@ import Navbar from './components/navbar/Navbar';
 import './globals.css';
 import { Cairo } from 'next/font/google';
 import { Toaster } from 'react-hot-toast';
+
 import 'swiper/css/bundle';
+import ScrollTop from './components/ScrollTop';
 
 const font = Cairo({ subsets: ['latin'] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<Navbar />
 				<main className='overflow-hidden'>{children}</main>
 				<Toaster position='top-center' reverseOrder={false} />
+				<ScrollTop />
 			</body>
 		</html>
 	);

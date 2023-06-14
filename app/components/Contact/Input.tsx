@@ -23,11 +23,12 @@ const Input: React.FC<Props> = ({ id, label, type, register, errors }) => {
 				id={id}
 				placeholder={label}
 				className={` 
-          w-full
+					w-full
+          max-w-lg
           text-sm
           font-medium
           bg-white
-          bg-transparent
+					rounded-sm
 					ring-0
 					focus:ring-0
           outline-none

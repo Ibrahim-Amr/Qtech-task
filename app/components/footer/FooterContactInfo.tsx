@@ -12,7 +12,7 @@ const FooterContactInfo: React.FC<FooterContactInfoProps> = ({ list }) => {
 			</h3>
 			<ul className='flex flex-col justify-center items-start gap-y-3'>
 				{list.map((list) => (
-					<ContactInfoItem label={list.label} icon={list.icon} />
+					<ContactInfoItem key={list.label} label={list.label} icon={list.icon} />
 				))}
 			</ul>
 		</div>

@@ -19,6 +19,10 @@ const Button: React.FC<ButtonProps> = ({ label, href }) => {
           py-2
 					shadow
 					hover:shadow-lg
+					active:scale-95
+					transition
+					duration-200
+					ease-linear
 					'>
 					{label}
 				</Link>
@@ -35,6 +39,7 @@ const Button: React.FC<ButtonProps> = ({ label, href }) => {
 					shadow
 					hover:shadow-lg
 					hover:bg-orange-main
+					active:scale-95
 					transition
 					duration-200
 					ease-linear

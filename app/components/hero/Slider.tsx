@@ -33,7 +33,7 @@ const Slider = () => {
 								height={0}
 								alt={''}
 								title={''}
-								loading='lazy'
+								priority
 								className='object-cover object-center w-full h-full relative brightness-[0.45]'
 							/>
 							<div className='absolute inset-0 w-full text-white flex flex-col justify-center items-center lg:items-start gap-y-3 lg:pr-36'>

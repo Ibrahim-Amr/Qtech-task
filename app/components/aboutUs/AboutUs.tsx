@@ -1,16 +1,12 @@
 import Container from '../Container';
 import SectionHeading from '../SectionHeading';
-import Logo from '../navbar/Logo';
 
 const AboutUs = () => {
 	return (
-		<section
-			id='about'
-			className='relative min-h-[60vh] h-auto w-full z-[50] py-14 xl:p-14 flex justify-center items-center'>
+		<section id='about' className='relative  h-auto w-full z-[50] py-14 xl:p-14'>
 			<Container>
-				<div className='flex flex-col justify-center items-center text-center'>
+				<div className='flex flex-col justify-start items-center text-center'>
 					<SectionHeading title='من نحن' subtitle='رواد الخبرة للاستشارات' center />
-					<Logo />
 					<p className='text-[#464241] sm:text-base font-semibold max-w-6xl mt-5'>
 						رواد الخبرة للاستشارات أنشئت لخدمتكم وتحقيقا لتطلعاتكم، حيث نعتبر أنفسنا شركاء لكم
 						مهتمين بنجاح مشاريعكم الاستثمارية وخططكم المستقبلية متمنين أن نساهم مع غيرنا في رفع

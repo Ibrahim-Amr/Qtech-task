@@ -19,6 +19,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle }) =
 						fill='#EFEFEF'></path>
 				</svg>
 				<Image
+					priority
 					src={image}
 					alt={title}
 					width={75}
