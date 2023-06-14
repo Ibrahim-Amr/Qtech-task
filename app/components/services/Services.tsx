@@ -4,7 +4,6 @@ import serv1 from '@/public/servicesIcon1.png';
 import serv2 from '@/public/servicesIcon2.png';
 import serv3 from '@/public/servicesIcon3.png';
 import serv4 from '@/public/servicesIcon4.png';
-import Link from 'next/link';
 
 const services = [
 	{

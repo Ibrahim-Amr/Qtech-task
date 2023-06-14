@@ -13,7 +13,7 @@ const SectionHeading: React.FC<HeadingsProps> = ({ title, subtitle, center, whit
 				z-50
 				${center ? 'text-center' : 'text-center lg:text-start'}
 			`}>
-			<h4
+			<h2
 				className={`
 				${white ? 'text-white' : 'text-orange-main'}
 				text-base
@@ -22,8 +22,8 @@ const SectionHeading: React.FC<HeadingsProps> = ({ title, subtitle, center, whit
 				z-50
 				`}>
 				{title}
-			</h4>
-			<h2
+			</h2>
+			<h3
 				className={`
 				text-blue-main
 				text-lg
@@ -48,7 +48,7 @@ const SectionHeading: React.FC<HeadingsProps> = ({ title, subtitle, center, whit
 				ease-in-out
 				`}>
 				{subtitle}
-			</h2>
+			</h3>
 		</div>
 	);
 };

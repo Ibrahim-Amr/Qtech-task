@@ -6,7 +6,7 @@ const Navlinks = [
 	{ label: 'عملاؤنا', href: '#clients' },
 	{ label: 'الهيكل التنظيمي', href: '#clients' },
 	{ label: 'من نحن', href: '#clients' },
-	{ label: 'اتصل بنا', href: '/contact' },
+	{ label: 'اتصل بنا', href: '#contact' },
 ];
 const NavMenu = () => {
 	return (

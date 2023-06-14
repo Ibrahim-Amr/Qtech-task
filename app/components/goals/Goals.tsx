@@ -23,7 +23,7 @@ const Goals = () => {
 						<Button label='تعرف علي أهدفنا' />
 					</div>
 					<div className='flex-1 hidden lg:flex justify-center items-center'>
-						<Image src={view} alt='view' width={500} height={0} />
+						<Image src={view} alt='view' width={500} height={0} priority />
 					</div>
 				</div>
 			</Container>
