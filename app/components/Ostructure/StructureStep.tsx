@@ -1,15 +1,28 @@
+'use client';
 import Image, { StaticImageData } from 'next/image';
+import { motion } from 'framer-motion';
 
 interface StructureStepProps {
 	number: number;
 	label: string;
 	image: StaticImageData;
 	translate: boolean;
+	index: number;
 }
 
-const StructureStep: React.FC<StructureStepProps> = ({ number, image, label, translate }) => {
+const StructureStep: React.FC<StructureStepProps> = ({
+	number,
+	image,
+	label,
+	translate,
+	index,
+}) => {
 	return (
-		<div
+		<motion.div
+			initial={{ opacity: 0, x: 10 }}
+			whileInView={{ opacity: 1, x: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.7, delay: 0.35 * index }}
 			className={`flex flex-col justify-center items-center gap-y-5 ${
 				translate ? 'pt-20' : 'pt-0'
 			}`}>
@@ -24,7 +37,7 @@ const StructureStep: React.FC<StructureStepProps> = ({ number, image, label, tra
 				إعداد دراسات الجدوى والبحوث العلمية والتطبيقية في المجالات الاقتصادية، والإدارية،
 				والاكاديمية والتعليمية والرياضية.
 			</p>
-		</div>
+		</motion.div>
 	);
 };
 

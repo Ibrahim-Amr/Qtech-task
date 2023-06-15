@@ -44,6 +44,7 @@ const Ostructure = () => {
 								label={step.labe}
 								image={step.image}
 								translate={step?.translate}
+								index={i}
 							/>
 						))}
 					</div>

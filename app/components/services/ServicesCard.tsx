@@ -1,13 +1,21 @@
+'use client';
 import Image, { StaticImageData } from 'next/image';
+import { motion } from 'framer-motion';
 
 interface ServicesCardProps {
 	image: StaticImageData;
 	title: string;
 	subtitle: string;
+	index: number;
 }
-const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle }) => {
+const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle, index }) => {
 	return (
-		<div className='w-full py-[10px] flex flex-col lg:flex-row justify-center items-center'>
+		<motion.div
+			initial={{ opacity: 0, x: 10 }}
+			whileInView={{ opacity: 1, x: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.5, delay: 0.2 * index }}
+			className='w-full py-[10px] flex flex-col lg:flex-row justify-center items-center'>
 			<div className='group relative flex-1'>
 				<svg
 					className='pouple min-w-[250px] w-full'
@@ -31,7 +39,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle }) =
 				<h2 className='text-lg font-bold'>{title}</h2>
 				<p>{subtitle}</p>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

@@ -36,12 +36,13 @@ const Services = () => {
 		<section id='services' className='relative h-auto w-full z-[60] py-14 xl:p-14'>
 			<Container>
 				<div className='grid sm:grid-cols-2 gap-x-[30px] mb-10'>
-					{services.map((serv) => (
+					{services.map((serv, i) => (
 						<ServicesCard
 							key={serv.title}
 							title={serv.title}
 							subtitle={serv.subtitle}
 							image={serv.image}
+							index={i}
 						/>
 					))}
 				</div>

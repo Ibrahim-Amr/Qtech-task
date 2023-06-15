@@ -1,13 +1,21 @@
+'use client';
 import Image from 'next/image';
 import Container from '../Container';
 import view from '@/public/view.webp';
 import SectionHeading from '../SectionHeading';
 import Button from '../Button';
 import GoalsSlider from './GoalsSlider';
+import { motion } from 'framer-motion';
 
 const Goals = () => {
 	return (
-		<section id='goals' className='goals h-auto w-full py-14 overflow-hidden'>
+		<motion.section
+			initial={{ opacity: 0, x: 10 }}
+			whileInView={{ opacity: 1, x: 0 }}
+			viewport={{ once: true }}
+			transition={{ duration: 0.7, delay: 0.5, ease: 'easeIn' }}
+			id='goals'
+			className='goals h-auto w-full py-14 overflow-hidden'>
 			<Container>
 				<div className='flex justify-between items-center gap-x-8'>
 					<div className='flex-1 flex flex-col justify-center items-center lg:inline-block '>
@@ -29,7 +37,7 @@ const Goals = () => {
 				</div>
 			</Container>
 			<GoalsSlider />
-		</section>
+		</motion.section>
 	);
 };
 
