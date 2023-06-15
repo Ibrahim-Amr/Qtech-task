@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.side-bar {
+		@apply h-screen w-screen fixed inset-0 overflow-hidden bg-gradient-to-b from-black/90 to-zinc-800 z-50 text-center px-4 sm:px-4;
+	}
+}
+
 html,
 body {
 	scroll-behavior: smooth;
+	color: white;
 }
 
 /* SWIPER */
@@ -24,10 +31,8 @@ body {
 	top: 85px !important;
 }
 
-/* .swiper-slide-active {
-} */
-
 /* SWIPER END */
+
 .pouple path {
 	transition: all 0.5s;
 }

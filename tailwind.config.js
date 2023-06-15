@@ -19,20 +19,6 @@ module.exports = {
 				},
 			},
 		},
-		fontSize: {
-			'2xl': '2.5rem',
-			xl: '1.875rem',
-			lg: '1.5rem',
-			base: '1.25rem',
-			sm: '1rem',
-			xs: '0.875rem',
-			h1: '2rem',
-			h2: '1.5rem',
-			h3: '1.3rem',
-			h4: '1rem',
-			h5: '0.8rem',
-			h6: '0.7rem',
-		},
 	},
 	plugins: [
 		plugin(function ({ addBase, theme }) {

@@ -3,6 +3,7 @@ import useNavbarVisibility from '@/hooks/useNavbarVisibility';
 import Logo from './Logo';
 import NavMenu from './NavMenu';
 import SocailMenu from './SocailMenu';
+import ToggleMenu from './ToogleMenu';
 
 const Navbar = () => {
 	const { isNavbarVisible, currentScroll } = useNavbarVisibility();
@@ -41,6 +42,7 @@ const Navbar = () => {
 				<Logo />
 				<NavMenu />
 				<SocailMenu />
+				<ToggleMenu />
 			</nav>
 		</header>
 	);

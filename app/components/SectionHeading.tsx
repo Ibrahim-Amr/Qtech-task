@@ -16,7 +16,7 @@ const SectionHeading: React.FC<HeadingsProps> = ({ title, subtitle, center, whit
 			<h2
 				className={`
 				${white ? 'text-white' : 'text-orange-main'}
-				text-base
+				text-xl
 				font-medium
 				mb-4
 				z-50
@@ -26,7 +26,7 @@ const SectionHeading: React.FC<HeadingsProps> = ({ title, subtitle, center, whit
 			<h3
 				className={`
 				text-blue-main
-				text-lg
+				text-3xl
 				font-bold
 				relative
 				before:absolute

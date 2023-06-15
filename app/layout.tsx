@@ -5,6 +5,8 @@ import { Toaster } from 'react-hot-toast';
 
 import 'swiper/css/bundle';
 import ScrollTop from './components/ScrollTop';
+import ContextProvider from './ContextProvider';
+import Sidebar from './components/Sidebar/Sidebar';
 
 const font = Cairo({ subsets: ['latin'] });
 
@@ -17,9 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 	return (
 		<html lang='ar' dir='rtl' className='light antialiased'>
 			<body className={font.className}>
-				<Navbar />
-				<main className='overflow-hidden'>{children}</main>
-				<Toaster position='top-center' reverseOrder={false} />
+				<ContextProvider>
+					<Navbar />
+					<main className='overflow-hidden'>{children}</main>
+					<Toaster position='top-center' reverseOrder={false} />
+					<Sidebar />
+				</ContextProvider>
 				<ScrollTop />
 			</body>
 		</html>

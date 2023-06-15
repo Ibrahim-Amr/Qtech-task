@@ -33,7 +33,7 @@ const StructureStep: React.FC<StructureStepProps> = ({
 				<Image src={image} alt='goal1' height={75} width={75} priority />
 			</div>
 			<h3 className='text-blue-main font-bold text-xl'>{label}</h3>
-			<p>
+			<p className='text-[#464241]'>
 				إعداد دراسات الجدوى والبحوث العلمية والتطبيقية في المجالات الاقتصادية، والإدارية،
 				والاكاديمية والتعليمية والرياضية.
 			</p>

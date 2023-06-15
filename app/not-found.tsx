@@ -3,14 +3,14 @@ import Link from 'next/link';
 const NotFound = () => {
 	return (
 		<>
-			<section className='h-screen w-screen flex justify-center items-center font-[Chillax]'>
+			<section className='h-screen w-screen flex justify-center items-center font-[Chillax] bg-gradient-to-b from-black to-neutral-800 text-white'>
 				<div className='uppercase text-center'>
-					<p className='text-lg font-medium tracking-wider mb-5'>404</p>
-					<h1 className='text-4xl font-medium tracking-wider mb-10'>Page not found</h1>
+					<p className='text-2xl font-medium tracking-wider mb-5'>404</p>
+					<h1 className='text-2xl font-medium tracking-wider mb-10'>هذه الصفحة غير موجودة</h1>
 					<Link
 						href={'/'}
-						className='rounded-md py-4 px-6 bg-[#cebd63] hover:brightness-75 transition text-black'>
-						Back To Homepage
+						className='rounded-md py-4 px-6 bg-blue-main hover:brightness-75 transition text-white font-semibold text-base'>
+						ارجع للصفحة الرئيسية
 					</Link>
 				</div>
 			</section>

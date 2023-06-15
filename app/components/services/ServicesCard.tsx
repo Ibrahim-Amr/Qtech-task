@@ -36,7 +36,7 @@ const ServicesCard: React.FC<ServicesCardProps> = ({ image, title, subtitle, ind
 				/>
 			</div>
 			<div className='flex-1 text-center lg:text-start text-blue-main'>
-				<h2 className='text-lg font-bold'>{title}</h2>
+				<h2 className='text-2xl font-bold'>{title}</h2>
 				<p>{subtitle}</p>
 			</div>
 		</motion.div>

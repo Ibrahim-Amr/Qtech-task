@@ -47,21 +47,21 @@ const Slider = () => {
 									initial={{ opacity: 0, y: 10 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ duration: 0.3 }}
-									className='text-xl sm:text-2xl font-bold'>
+									className='text-xl sm:text-4xl font-bold'>
 									مع رواد الخبرة للاستشارات{' '}
 								</motion.h3>
 								<motion.h4
 									initial={{ opacity: 0, y: 10 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ duration: 0.3, delay: 0.2 }}
-									className='text-lg sm:text-lg font-semibold'>
+									className='text-lg sm:text-2xl font-semibold'>
 									سوف تجد كل الحلول التى تناسبك{' '}
 								</motion.h4>
 								<motion.p
 									initial={{ opacity: 0, y: 10 }}
 									animate={{ opacity: 1, y: 0 }}
 									transition={{ duration: 0.3, delay: 0.4 }}
-									className='text-sm font-medium'>
+									className='text-base font-medium'>
 									الاقتصادية - الإدارية - التعليمية والتربوية
 								</motion.p>
 								<Button label='تواصل معنا' />
