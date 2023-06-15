@@ -18,7 +18,7 @@ export const info = [
 		icon: IoMail,
 	},
 	{
-		label: '+20 10 2030 7846',
+		label: '123456789',
 		icon: AiFillPhone,
 	},
 ];

@@ -1,12 +1,12 @@
 import NavMenuItem from './NavMenuItem';
 
 const Navlinks = [
-	{ label: 'الرئيسية', href: '/' },
-	{ label: 'الرؤيةوالرسالة', href: '#goals' },
-	{ label: 'عملاؤنا', href: '#clients' },
-	{ label: 'الهيكل التنظيمي', href: '#clients' },
-	{ label: 'من نحن', href: '#clients' },
-	{ label: 'اتصل بنا', href: '#contact' },
+	{ label: 'الرئيسية', href: '' },
+	{ label: 'الرؤيةوالرسالة', href: '' },
+	{ label: 'عملاؤنا', href: '' },
+	{ label: 'الهيكل التنظيمي', href: '' },
+	{ label: 'من نحن', href: '' },
+	{ label: 'اتصل بنا', href: '`' },
 ];
 const NavMenu = () => {
 	return (
